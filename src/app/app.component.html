@@ -1,0 +1,7 @@
+<div class="grid md:grid-cols-2">
+  <app-vehicle-form
+    [vehicleData]="vehicles"
+    (onSelectedType)="onSelectedType($event)"
+  ></app-vehicle-form>
+  <app-vehicle-image [asset]="vechileAsset" *ngIf="isTypeSelected"></app-vehicle-image>
+</div>
